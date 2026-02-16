@@ -14,7 +14,7 @@ Aplicación móvil desarrollada en **React Native + Expo** con **TypeScript** pa
 
 ## Requisitos Previos
 
-- Node.js (v14 o superior)
+- Node.js (v24.13.0)
 - Expo CLI (opcional, `npx expo` funciona)
 - Emulador Android/iOS o dispositivo físico con Expo Go.
 - Backend local corriendo en el puerto 3002.
@@ -32,8 +32,9 @@ Aplicación móvil desarrollada en **React Native + Expo** con **TypeScript** pa
 
 1. Iniciar backend (en otra terminal):
    ```bash
-   # asumiendo que tienes el servidor json-server o similar
-   npm run start-server
+   # Ejecutar el backend desde el repositorio repo-interview-main
+   cd repo-interview-main
+   npm start # (o el comando configurado en ese repo)
    ```
    *Nota: La app está configurada para conectarse a `http://localhost:3002`. Si usas Android Emulator y `localhost` no funciona, la app usa este valor por defecto. Ajustar en `src/api/instance.ts` si es necesario (`10.0.2.2` para Android).*
 
