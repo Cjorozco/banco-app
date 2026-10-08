@@ -12,7 +12,9 @@ jest.mock('@react-navigation/native', () => ({
   useNavigation: () => ({
     navigate: mockNavigate,
   }),
-  useFocusEffect: jest.fn((callback) => callback()), // Execute callback immediately
+  // Run the callback in an effect (like the real hook), not during render
+  useFocusEffect: (callback: () => void | (() => void)) =>
+    require('react').useEffect(callback, [callback]),
 }));
 
 describe('ProductListScreen', () => {
