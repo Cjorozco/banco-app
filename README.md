@@ -1,20 +1,26 @@
 # Banco App
 
-Aplicación móvil desarrollada en **React Native + Expo** con **TypeScript** para la gestión de productos financiers.
+Aplicación móvil desarrollada en **React Native + Expo** con **TypeScript** para la gestión de productos financieros.
+
+## Capturas
+
+| Listado | Detalle | Formulario |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/lista.png" width="240" alt="Listado de productos" /> | <img src="docs/screenshots/detalle.png" width="240" alt="Detalle de producto" /> | <img src="docs/screenshots/formulario.png" width="240" alt="Formulario de registro" /> |
 
 ## Características
 
-- Listado de productos con búsqueda y paginación (simulada).
+- Listado de productos con búsqueda y paginación simulada.
 - Detalle de producto con acciones de editar y eliminar.
 - Formulario de creación y edición con validaciones estrictas.
 - Modal de confirmación para eliminación.
-- Testing con Jest y React Native Testing Library.
+- Pruebas con Jest y React Native Testing Library.
 - Skeleton loading para estados de carga.
 - Arquitectura limpia y modular.
 
 ## Requisitos Previos
 
-- Node.js (v24.13.0)
+- Node.js v24.13.0
 - Expo CLI (opcional, `npx expo` funciona)
 - Emulador Android/iOS o dispositivo físico con Expo Go.
 - Backend local corriendo en el puerto 3002.
@@ -26,7 +32,7 @@ Aplicación móvil desarrollada en **React Native + Expo** con **TypeScript** pa
    ```bash
    npm install
    ```
-3. Asegurar que las dependencias de testing y navegación estén instaladas.
+3. Verificar que las dependencias de pruebas y navegación estén instaladas.
 
 ## Ejecución
 
@@ -53,9 +59,9 @@ Para ejecutar la suite de pruebas:
 npm test
 ```
 
-Esto correrá Jest y validará:
+Esto ejecutará Jest y validará:
 - Lógica de validación (`validators.test.ts`)
-- Componentes y Pantallas (`ProductListScreen.test.tsx`, `ProductFormScreen.test.tsx`)
+- Componentes y pantallas (`ProductListScreen.test.tsx`, `ProductFormScreen.test.tsx`)
 
 ## Arquitectura
 
