@@ -75,7 +75,7 @@ describe('ProductListScreen', () => {
 
     await waitFor(() => expect(getByText('Producto 1')).toBeTruthy());
 
-    const addButton = getByText('Agrega');
+    const addButton = getByText('Agregar');
     fireEvent.press(addButton);
 
     expect(mockNavigate).toHaveBeenCalledWith('Form', {});
