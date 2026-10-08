@@ -94,7 +94,7 @@ export const ProductListScreen: React.FC = () => {
             </View>
             <View style={styles.buttonContainer}>
               <Button
-                text="Agrega"
+                text="Agregar"
                 onPress={() => navigation.navigate("Form", {})}
                 variant="primary"
               />
